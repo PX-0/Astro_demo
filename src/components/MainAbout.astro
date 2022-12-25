@@ -1,0 +1,42 @@
+---
+
+const identity = {
+firstName: "Dario",
+country: "Italy",
+occupation: "Junior Developer",
+hobbies: ["videogames","anime","gym","programming","choose vscode theme"]
+};
+
+const skills = ["HTML", "Sass", "JavaScript","Astro"];
+---
+<main class="main-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>PX-0</h1>
+        <p>Here are a few facts about me:</p>
+        <p>My real name is {identity.firstName}.</p>
+        <p>I live in {identity.country} and I work as a {identity.occupation}.</p>
+        {
+        identity.hobbies.length === 1 ?
+        <p>
+          My hobby is: {identity.hobbies}
+        </p>
+        :
+        <p>
+          Two of my hobbies are: {identity.hobbies[1]} and {identity.hobbies[4]}
+        </p>
+        }
+        <p>My skills are:</p>
+        <div class="my-skills">
+          {skills.map((skill) => <p>{skill}</p>)}
+        </div>
+      </div>
+      <div class="col-lg-6 row d-flex align-item-center">
+        <div class="col d-flex justify-content-center">
+          <img src="https://static.zerochan.net/Bartholomew.Kuma.full.1639633.jpg" alt="" srcset="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

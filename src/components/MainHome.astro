@@ -1,0 +1,11 @@
+---
+import Greeting from "./WelcomeMsg";
+import Button from "./Button";
+---
+<main>
+  <div>
+    <!-- <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} /> -->
+    <Greeting client:load messages={["Hello", "Konnichiwa", "Bella","Allô"]} />
+    <Button client:only/>
+  </div>
+</main>

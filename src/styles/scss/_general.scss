@@ -1,0 +1,33 @@
+body{
+    background: #252525;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: $secondary !important;
+    &:hover{
+        color:white !important;
+    }
+}
+
+footer{
+    background: $primary;
+    width: 100%;
+
+    .bi{
+        width: 1.4rem;
+        height: auto;
+    }
+}
+
+/* --------------------------------- CLASSES -------------------------------- */
+

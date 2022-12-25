@@ -1,0 +1,18 @@
+.main-about{
+
+    h1{
+        color: lighten($primary, 10%) ;
+        font-size: 4rem;
+    }
+
+    color: white;
+    text-align: center;
+
+    .my-skills{
+        list-style: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: .4rem;
+    }
+}
